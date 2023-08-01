@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas HTML</title>
+    <style>
+        .item {
+            color: #D33;
+        }
+
+        .comentario {
+            color: green;
+        }
+
+        code {
+            color: #555;
+        }
+
+        html {
+            margin-bottom: 80vh;
+        }
+        
+        caption {
+            border-radius: 5px;
+            color: #CCC;
+            background-color: maroon;
+        }
+
+        th, td {
+            border: 1px solid #555;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        th {
+            background-color: lightgreen;
+        }
+
+        thead {
+            background-color: lightgreen;
+        }
+
+        tbody {
+            background-color: bisque;
+        }
+
+        tfoot {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Principales etiquetas en HTML 5</h1>
+    
+    <h2>Etiquetas de título</h2>
+    <hr>
+    <blockquote>
+    <h1>Título h1</h1>
+    <h2>Título h2</h2>
+    <h3>Título h3</h3>
+    <h4>Título h4</h4>
+    <h5>Título h5</h5>
+    <h6>Título h6</h6>
+    </blockquote>
+    
+    <hr>
+    <h2>Etiquetas de texto</h2>
+    <blockquote><code>
+        <p>Esto es un párrafo - etiqueta &lt;p&gt;</p>
+        <i>Texto en cursiva - etiqueta &lt;i&gt;</i><br>
+        <b>Texto en negrita - etiqueta &lt;b&gt;</b><br>
+        <u>Texto subrayado con la etiqueta &lt;u&gt;</u><br>
+        <strong>Texto resaltado con la etiqueta &lt;strong&gt;</strong><br>
+        <s>Texto tachado con la etiqueta &lt;s&gt; o &lt;del&gt;</s><br>
+        Texto <sup>superíndice</sup> con la etiqueta &lt;sup&gt;<br>
+        Texto <sub>subíndice</sub> con la etiqueta &lt;sup&gt;<br>
+        <small>Texto pequeño con la etiqueta &lt;small&gt;</small><br>
+        &lt;br&gt; fuerza un salto de línea <br>
+        &lt;hr&gt; inserta una línea horizontal<br>
+    </code></blockquote>
+    
+    <hr>
+    <h2>Listas</h2>
+    <blockquote>
+        <h3>Lista no ordenada</h3>
+        <u>Estructura básica</u>
+        <code><pre>
+    &lt;ul&gt;
+        &lt;li&gt;<span class="item"> Item 1 </span>&lt;/li&gt;
+        &lt;li&gt;<span class="item"> Item 2 </span>&lt;/li&gt;
+        &lt;li&gt;<span class="item"> Item 3 </span>&lt;/li&gt;
+    &lt;/ul&gt;
+        </pre></code>
+        <u>Ejemplo</u>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        
+        <h3>Lista ordenada</h3>
+        <u>Estructura básica</u>
+        <code><pre>
+    &lt;ol&gt;
+        &lt;li&gt;<span class="item"> Item 1 </span>&lt;/li&gt;
+        &lt;li&gt;<span class="item"> Item 2 </span>&lt;/li&gt;
+        &lt;li&gt;<span class="item"> Item 3 </span>&lt;/li&gt;
+    &lt;/ol&gt;
+        </pre></code>
+        <u>Ejemplo</u>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+
+        <h3>Lista de Definición</h3>
+        <u>Estructura básica</u>
+        <code><pre>
+    &lt;dl&gt;
+        &lt;dt&gt;<span class="item"> Término 1    </span>&lt;/dt&gt;
+        &lt;dd&gt;<span class="item"> Definición 1 </span>&lt;/dd&gt;
+        &lt;dt&gt;<span class="item"> Término 2    </span>&lt;/dt&gt;
+        &lt;dd&gt;<span class="item"> Definición 2 </span>&lt;/dd&gt;
+    &lt;/dl&gt;
+        </pre></code>
+        <u>Ejemplo</u>
+        <dl>
+            <dt>Término 1</dt>
+            <dd>Definición 1</dd>
+            <dt>Término 2</dt>
+            <dd>Definición 2</dd>
+        </dl>
+                
+    </blockquote>
+
+    <hr>
+    <h2>Tablas</h2>
+    <blockquote>
+        <u>Estructura básica</u>
+        <code><pre>
+    &lt;table&gt;
+        &lt;caption&gt;<span class="item"> Título de la tabla </span>&lt;/caption&gt;
+        &lt;tr&gt; <span class="comentario"> &lt;!-- fila 1 --&gt;</span>
+            &lt;th&gt;<span class="item"> Table head </span>&lt;/th&gt;
+            &lt;th&gt;<span class="item"> Table head </span>&lt;/th&gt;
+            &lt;th&gt;<span class="item"> Table head </span>&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt; <span class="comentario"> &lt;!-- fila 2 --&gt;</span>
+            &lt;td&gt;<span class="item"> Table data </span>&lt;/td&gt;
+            &lt;td&gt;<span class="item"> Table data </span>&lt;/td&gt;
+            &lt;td&gt;<span class="item"> Table data </span>&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+        </pre></code>
+
+        <p> 
+            Adicionalmente podemos usar las siguientes etiquetas para subdividir la tabla
+            en tres secciones diferentes, con el fin de poder darles posteriormente formato
+            a través de CSS:
+        </p>
+        <dl>
+            <dt><code>&lt;thead&gt;</code></dt>
+            <dd><cite>Etiqueta de cabecera de la tabla></cite></dd>
+            <dt><code>&lt;tbody&gt;</code></dt>
+            <dd><cite>Etiqueta del cuerpo de la tabla</cite></dd>
+            <dt><code>&lt;tfoot&gt;</code></dt>
+            <dd><cite>Etiqueta del pie de tabla</cite></dd>
+        </dl>
+        <p><u>Ejemplo</u></p>
+        <table>
+            <caption>Título de la tabla</caption>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>col 1</th>
+                    <th>col 2</th>
+                    <th>col 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>row 1</th>
+                    <td>cell 11</td>
+                    <td>cell 12</td>
+                    <td>cell 13</td>
+                </tr>
+                <tr><th>row 2</th>
+                    <td>cell 21</td>
+                    <td>cell 22</td>
+                    <td>cell 23</td>
+                </tr>
+                <tr>
+                    <th>row3</th>
+                    <td>cell 31</td>
+                    <td>cell 32</td>
+                    <td>cell 33</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th></th>
+                    <td>foot 1</td>
+                    <td>foot 2</td>
+                    <td>foot 3</td>
+                </tr>
+            </tfoot>
+        </table>
+        <P>
+            Por último, podemos expandir las celdas colocando, dentro de las etiquetas
+            <code>&lt;th&gt; y &lt;td&gt;</code> los siguientes atributos:
+        </P>
+        <dl>
+            <dt><code>colspan="n"</code></dt>
+            <dd><cite>Indica que la celda se expandirá n columnas hacia la derecha</cite></dd>
+            <dt><code>rowspan="n"</code></dt>
+            <dd><cite>Indica que la celda se expandirá n filas hacia abajo</cite></dd>
+        </dl>
+    </blockquote>
+    <hr>
+</body>
+</html>
