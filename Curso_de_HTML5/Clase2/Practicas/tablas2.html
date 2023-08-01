@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas 2</title>
+    <style>
+        th, td {
+            color: maroon;
+            border: 2px solid chocolate;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .color {
+            background-color: lightsalmon;
+        }
+
+        caption {
+            text-align: center;
+            font-size: large;
+            caption-side: bottom;
+            color: maroon;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption><b>Tabla 2:</b> thead - tbody - tfoot</caption>
+        <thead>
+            <tr>
+                <th class="color"></th>
+                <th colspan="2">Juan</th>
+                <th colspan="2">Raúl</th>
+            </tr>
+            <tr>
+                <th>Fecha</th>
+                <th>Ingresos</th>
+                <th>Gastos</th>
+                <th>Ingresos</th>
+                <th>Gastos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>12/10/2021</th>
+                <td>$120</td>
+                <td>$50</td>
+                <td>$12</td>
+                <td>$2.50</td>
+            </tr>
+            <tr>
+                <th>12/10/2021</th>
+                <td>$120</td>
+                <td>$50</td>
+                <td>$12</td>
+                <td>$2.50</td>
+            </tr>
+            <tr>
+                <th>12/10/2021</th>
+                <td>$120</td>
+                <td>$50</td>
+                <td>$12</td>
+                <td>$2.50</td>
+            </tr>
+            <tr>
+                <th>12/10/2021</th>
+                <td>$120</td>
+                <td>$50</td>
+                <td>$12</td>
+                <td>$2.50</td>
+            </tr>
+            <tr>
+                <th>12/10/2021</th>
+                <td>$120</td>
+                <td>$50</td>
+                <td>$12</td>
+                <td>$2.50</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <td colspan="2">$70</td>
+                <td colspan="2">$9.50</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
