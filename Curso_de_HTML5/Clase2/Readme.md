@@ -1,1 +1,1 @@
-# Clase 2: Textos
+# Clase 2 - Textos
